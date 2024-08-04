@@ -1,7 +1,7 @@
 #include "mbed.h"
 #include <cstdio>
 
-/*This programme will print bttnFall on cool term compiler when the blue button is pressed on the mbed. 
+/*This programme will print button pressed on cool-term compiler when the blue button is pressed on the mbed microcontroller. 
 On the first Commit this did not work correctly because the swich case statement was stuck on case 2 and
 Did not reset. This updated program below uses a volatile Int and Int_trig = 0 to reset the button when
 Pressed. The volatile means the value can change unexpectedly & when used with the interrupt in which 
@@ -33,5 +33,5 @@ int main()
 // print button pressed when the blue button has been pressed. 
         printf("Button Pressed \r\n");
         }
-        }
-        }
+    }
+}
